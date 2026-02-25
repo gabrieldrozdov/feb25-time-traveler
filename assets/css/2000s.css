@@ -9,4 +9,62 @@
 body {
 	font-family: monospace;
 	background-color: rgb(147, 246, 140);
+	padding: 10px;
+}
+p {
+	padding: 20px;
+	border-top: 5px solid black;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.intro {
+	padding: 40px;
+	font-size: 24px;
+	background-color: white;
+	transition: background-color 1s, transform 2s, font-style .5s;
+}
+.intro:hover {
+	background-color: red;
+	/* transform: rotate(180deg); */
+}
+.intro:active {
+	font-style: italic;
+}
+
+.highlight {
+	background-color: yellow;
+	transition: all .5s;
+}
+.highlight:hover {
+	font-size: 40px;
+}
+.highlight:active {
+	letter-spacing: 1em;
+}
+
+.hippo {
+	background-color: cyan;
+	animation: rhino 1s infinite steps(3) alternate;
+}
+
+@keyframes rhino {
+	0% {
+		font-size: 20px;
+		background-color: cyan;
+	}
+	50% {
+		font-size: 40px;
+	}
+	100% {
+		font-size: 1px;
+		background-color: yellow;
+	}
+}
+
+
+.cat {
+	background-color: hsl(20deg, 100%, 50%);
+	position: sticky;
+	top: 100px;
 }
